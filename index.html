@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número Secreto</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #4a90e2, #9013fe);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            width: 100px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-left: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            color: #4a90e2;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #eee;
+        }
+        
+        p {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>🎯 Adivinhe o Número Secreto</h1>
+        <p>Digite um número entre 1 e 100:</p>
+        <input type="number" id="palpite" min="1" max="100">
+        <button onclick="verificarPalpite()">Tentar</button>
+        <p id="mensagem"></p>
+
+        <script src="script.js"></script>
+    </body>
+</html>
